@@ -38,15 +38,15 @@
 <link href="${JFFormCSS}" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-<script src="js/jquery.min.js"></script>
+<script src="/resources/jquery.min.js"></script>
 
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<script src="js/fwslider.js"></script>
+<script src="/resources/jquery-ui.min.js"></script>
+<script src="/resources/css3-mediaqueries.js"></script>
+<script src="/resources/fwslider.js"></script>
 <!--end slider -->
 <!---strat-date-piker---->
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/jquery-ui.css" />
+<script src="/resources/jquery-ui.js"></script>
 		  <script>
 				  $(function() {
 				    $( "#datepicker,#datepicker1" ).datepicker();
@@ -54,8 +54,8 @@
 		  </script>
 <!---/End-date-piker---->
 
-		<script type="text/javascript" src="js/JFCore.js"></script>
-		<script type="text/javascript" src="js/JFForms.js"></script>
+		<script type="text/javascript" src="/resources/JFCore.js"></script>
+		<script type="text/javascript" src="/resources/JFForms.js"></script>
 		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
 			(function() {
