@@ -2,12 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.packt</groupId>
-  <artifactId>webstore</artifactId>
+  <groupId>com.paradise</groupId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>webstore</name>
+  <name>Paradise_Hotel</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -49,4 +48,5 @@
   		</dependency>
   	</dependencies>
   </dependencyManagement>
+  <artifactId>ParadiseHotel</artifactId>
 </project>
