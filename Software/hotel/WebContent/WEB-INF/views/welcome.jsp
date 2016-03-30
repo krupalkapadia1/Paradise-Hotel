@@ -24,11 +24,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- add spring:url -->
-<spring:url value="/resources/style.css'" var="styleCSS" />
-<spring:url value="/resources/fwslider.css'" var="sliderCSS" />
-<spring:url value="/resources/jquery-ui.css'" var="jqueryCSS" />
-<spring:url value="/resources/JFGrid.css'" var="JFGridCSS" />
-<spring:url value="/resources/JFFormStyle-1.css'" var="JFFormCSS" />
+<spring:url value="/resources/style.css" var="styleCSS" />
+<spring:url value="/resources/fwslider.css" var="sliderCSS" />
+<spring:url value="/resources/jquery-ui.css" var="jqueryCSS" />
+<spring:url value="/resources/JFGrid.css" var="JFGridCSS" />
+<spring:url value="/resources/JFFormStyle-1.css" var="JFFormCSS" />
 <!-- end spring:url -->
 
 <link href="${sliderCSS}" rel="stylesheet" media="all" />
@@ -44,7 +44,7 @@
 <script src="/resources/css3-mediaqueries.js"></script>
 <script src="/resources/fwslider.js"></script>
 <!--end slider -->
-<!---strat-date-piker---->
+<!---start-date-piker---->
 <link rel="stylesheet" href="/resources/jquery-ui.css" />
 <script src="/resources/jquery-ui.js"></script>
 		  <script>
