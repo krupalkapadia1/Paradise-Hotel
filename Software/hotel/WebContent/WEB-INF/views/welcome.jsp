@@ -29,6 +29,16 @@
 <spring:url value="/resources/jquery-ui.css" var="jqueryCSS" />
 <spring:url value="/resources/JFGrid.css" var="JFGridCSS" />
 <spring:url value="/resources/JFFormStyle-1.css" var="JFFormCSS" />
+<<<<<<< HEAD
+=======
+
+<spring:url value="/resources/jquery.min.js" var="JQuery.min.js" /> 
+<spring:url value="/resources/jquery-ui.min.js" var="JQuery-ui.min.js" />
+<spring:url value="/resources/css3-mediaqueries.js" var="mediaqueries.js" />
+<spring:url value="/resources/fwslider.js" var="fwslider.js" />
+<spring:url value="/resources/JFCore.js" var="JFCore.js" />
+<spring:url value="/resources/JFForms.js" var="JFForm.js" />
+>>>>>>> b395c852a93a29cd03ad897624c8ba2eebce4bfb
 <!-- end spring:url -->
 
 <link href="${sliderCSS}" rel="stylesheet" media="all" />
@@ -38,15 +48,22 @@
 <link href="${JFFormCSS}" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-<script src="/resources/jquery.min.js"></script>
+<script src="${JQuery.min.js}"></script>
+<script src="${JQuery-ui.min.js}"></script>
+<script src="${mediaqueries.js}"></script>
+<script src="${fwslider.js}"></script>
+<script src="${JFcore.js}"></script>
+<script src="${JFForm.js}"></script>
 
-<script src="/resources/jquery-ui.min.js"></script>
-<script src="/resources/css3-mediaqueries.js"></script>
-<script src="/resources/fwslider.js"></script>
 <!--end slider -->
+<<<<<<< HEAD
 <!---start-date-piker---->
 <link rel="stylesheet" href="/resources/jquery-ui.css" />
 <script src="/resources/jquery-ui.js"></script>
+=======
+
+<!---strat-date-piker---->
+>>>>>>> b395c852a93a29cd03ad897624c8ba2eebce4bfb
 		  <script>
 				  $(function() {
 				    $( "#datepicker,#datepicker1" ).datepicker();
@@ -54,9 +71,8 @@
 		  </script>
 <!---/End-date-piker---->
 
-		<script type="text/javascript" src="/resources/JFCore.js"></script>
-		<script type="text/javascript" src="/resources/JFForms.js"></script>
-		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+				
+<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
 			(function() {
 				JC.init({
@@ -64,8 +80,9 @@
 				});
 				})();
 		</script>
+
 <!--nav-->
-<script>
+		<script>
 		$(function() {
 			var pull 		= $('#pull');
 				menu 		= $('nav ul');
@@ -83,8 +100,9 @@
         		}
     		});
 		});
-</script>
+		</script>
 </head>
+
 <body>
 <!-- start header -->
 <div class="header_bg">
