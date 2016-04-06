@@ -164,7 +164,7 @@ body {
 .online_reservation{
 	position: relative;
 	
-	z-index: 999;
+	z-index: 999; */
 }
 .b_room{
 	margin: 2% 2%;
@@ -265,6 +265,7 @@ select option{
 .date_btn{
 	margin-top: 33px;
 }
+
 .date_btn form input[type="submit"] {
 	text-transform:capitalize;
 	width: 100% !important;
@@ -308,7 +309,7 @@ select option{
 }
 
 .date_btn1 form input[type="submit"]:hover {
-    background-color:  #228AC6;/* Green */
+    background-color:  #228AC6;Green
     width: 10% !important;
         display: inline-block;
 }
@@ -331,11 +332,11 @@ select option{
 }
 
 .date_btn2 form input[type="submit"]:hover {
-    background-color:  #228AC6;/* Green */
+    background-color:  #228AC6;Green
     width: 30% !important;
         display: inline-block;
 }
-
+ */
 
 /* start grids_of_3 */
 .grids_of_3{
@@ -1157,9 +1158,9 @@ span.next:hover {
 		float: none;
 		width: 98%;
 	}
-	.b_room {
+	.b_room form:form{
 		display: inline-block;
-	}
+	} 
 	.grid1_of_3 h4 a {
 		font-size: 1.4em;
 	}

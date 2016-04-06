@@ -1,24 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"  %> 
+<%@ taglib uri= "http://www.springframework.org/tags/form" prefix="form" %>
 
 <!DOCTYPE html>
 <html>
 <head>
 
 <!-- add spring:url -->
-<spring:url value="/resources/css/fwslider.css" var="sliderCSS" />
-<spring:url value="/resources/js/fwslider.js" var="sliderJS" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<link href="${sliderCSS}" rel="stylesheet" />
-<script src="${sliderJS}"></script>
 <title>Image testing</title>
-
-
-
-<html>
-<head> 
-<title>The Paradise-Hotel</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,15 +19,15 @@
 <spring:url value="/resources/css/jquery-ui.css" var="jqueryCSS" />
 <spring:url value="/resources/css/JFGrid.css" var="JFGridCSS" />
 <spring:url value="/resources/css/JFFormStyle-1.css" var="JFFormCSS" />
-<HEAD>
 
-
+<spring:url value="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" var="googleApi" />
 <spring:url value="/resources/js/jquery.min.js" var="JQuery.min.js" /> 
 <spring:url value="/resources/js/jquery-ui.min.js" var="JQuery-ui.min.js" />
 <spring:url value="/resources/js/css3-mediaqueries.js" var="mediaqueries.js" />
 <spring:url value="/resources/js/fwslider.js" var="fwslider.js" />
 <spring:url value="/resources/js/JFCore.js" var="JFCore.js" />
 <spring:url value="/resources/js/JFForms.js" var="JFForm.js" />
+<spring:url value="/resources/js/jquery-ui.js" var="jQuery-ui.js" />
 
 <!-- end spring:url -->
 
@@ -54,12 +44,11 @@
 <script src="${fwslider.js}"></script>
 <script src="${JFcore.js}"></script>
 <script src="${JFForm.js}"></script>
-
+<script src="${googleApi}"></script>
+<script src="${jQuery-ui.js}"></script>
 <!--end slider -->
 
-<!---start-date-piker---->
-<link rel="stylesheet" href="/resources/js/jquery-ui.css" />
-<script src="/resources/js/jquery-ui.js"></script>
+
 
 <!---strat-date-piker---->
 
@@ -143,7 +132,7 @@
 	</div>
 </div>
 </div>
-<<<<<<< HEAD
+
 <!----start-images-slider---->
 		<div class="images-slider">
 			<!-- start slider -->
@@ -151,8 +140,7 @@
 		        <div class="slider_container">
 		            <div class="slide"> 
 		                <!-- Slide image -->
-		                ${image}
-		                <img src='resources/paradise1.jpg' alt=''/>
+		                <img src='resources/images/paradise1.png' alt=''/>
                                    
 		                <!-- /Slide image -->
 		                <!-- Texts container -->
@@ -171,7 +159,7 @@
 		            <!-- /Duplicate to create more slides -->
 		            <div class="slide">
 		            <%-- ${image} --%>		            
-		                <img src="<c:url value='resources/hotel1.jpg' alt='hotel image 1'/>"/>
+		                <img src="<c:url value='resources/images/hotel1.png'  alt='hotel image 1'/>"/>
                               
 		                <div class="slide_content">
                                     
@@ -187,7 +175,7 @@
 		            <!--/slide -->
                              
                              <div class="slide">
-		                <img src="resources/hotel6.jpg" alt=""/>
+		                <img src="resources/images/hotel6.jpg" alt=""/>
                               
 		                <div class="slide_content">
                                     
@@ -202,7 +190,7 @@
 		            </div>
 		            <!--/slide -->
                              <div class="slide">
-		                <img src="resources/hotel8.jpg" alt=""/>
+		                <img src="resources/images/hotel8.jpg" alt=""/>
                               
 		                <div class="slide_content">
                                     
@@ -224,7 +212,7 @@
 		    </div>
 		    <!--/slider -->
 		</div>
-=======
+
 
 <div id="fwslider">
   
@@ -234,9 +222,6 @@
    </div>
 
 
-
-
->>>>>>> a0943c3e0318116f28bdef26740510bd59cfe04e
 <!--start main -->
 
 	<div class="online_reservation">
@@ -245,63 +230,65 @@
 			<h4>book a room online</h4>
 			
 		</div>
+		<!----------start section_room----------->
 		<div class="reservation">
 			<ul>
 				<li class="span1_of_1">
-					<h5>type of room:</h5>
-					<!----------start section_room----------->
+					<h5>type of room:</h5>									
 					<div class="section_room">
-						<select id="country" onchange="change_country(this.value)" class="frm-field required">
-							<option value="null">Select a type of room</option>
-				            <option value="null">Suite room</option>         
-				            <option value="AX">Single room</option>
-							<option value="AX">Double room</option>
+						<select id="roomType" onchange="change_country(this.value)" class="frm-field required">
+							<option value="">Select a type of room</option>
+				            <option value="suite">Suite room</option>         
+				            <option value="single">Single room</option>
+							<option value="double">Double room</option>
 		        		</select>
 					</div>	
 				</li>
+				
 				<li  class="span1_of_1 left">
 					<h5>check-in-date:</h5>
 					<div class="book_date">
-						<form>
-							<input class="date" id="datepicker" 
+					<form:form>						
+							<input class="date" id="datepicker" path="datepicker"
 							type="text" value="DD/MM/YY"
-							 onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
-						</form>
-
+							 onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}" />
+					</form:form>						
 					</div>					
 				</li>
+				
 				<li  class="span1_of_1 left">
 					<h5>check-out-date:</h5>
 					<div class="book_date">
-						<form>
-							<input class="date" id="datepicker1" 
+					<form:form>					
+							<input class="date" id="datepicker1" path="datepicker1"
 							type="text" value="DD/MM/YY" 
-							onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
-						</form>
+							onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}" />						
+					</form:form>
 					</div>		
 				</li>
+				
 				<li class="span1_of_2 left">
-					<h5>Adults:</h5>
-					<!----------start section_room----------->
+					<h5>Adults:</h5>					
 					<div class="section_room">
-						<select id="country" onchange="change_country(this.value)" class="frm-field required">
-							<option value="null">1</option>
-				            <option value="null">2</option>         
-				            <option value="AX">3</option>
-							<option value="AX">4</option>
+						<select id="guestNumber" onchange="change_country(this.value)" class="frm-field required">
+							<option value="1">1</option>
+				            <option value="2">2</option>         
+				            <option value="3">3</option>
+							<option value="4">4</option>
 		        		</select>
 					</div>					
 				</li>
+				
 				<li class="span1_of_3">
 					<div class="date_btn">
-                                            <form action="book.html">
+					<form:form action="search" method="GET">                                            
 							<input type="submit" value="Book now" />
-						</form>
+					</form:form >					
 					</div>
-				</li>
+				</li>								
 				<div class="clear"></div>
 			</ul>
-		</div>
+		</div>		
 		<div class="clear"></div>
 		</div>
 	</div>
@@ -324,14 +311,12 @@
 				</ul>
 			</div>
 			
-<<<<<<< HEAD
+
 			<div class="clear"></div>
              <img src='resources/paradise1.jpg' alt=''/>
                 
-=======
-		
-                        
->>>>>>> a0943c3e0318116f28bdef26740510bd59cfe04e
+
+
 </div>
 </div>
 </div>		
