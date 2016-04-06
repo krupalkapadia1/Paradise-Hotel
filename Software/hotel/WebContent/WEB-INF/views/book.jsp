@@ -1,35 +1,63 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"  %> 
+<%@ taglib uri= "http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-        
-   <title>The Paradise-Hotel</title>
+
+<head>      
+<title>The Paradise-Hotel</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- add spring:url -->
+<spring:url value="/resources/css/style.css" var="styleCSS" />
+<spring:url value="/resources/css/fwslider.css" var="sliderCSS" />
+<spring:url value="/resources/css/jquery-ui.css" var="jqueryCSS" />
+<spring:url value="/resources/css/JFGrid.css" var="JFGridCSS" />
+<spring:url value="/resources/css/JFFormStyle-1.css" var="JFFormCSS" />
+<spring:url value="/resources/css/js-image-slider.css" var="imageSliderCSS" />
+
+<spring:url value="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" var="googleApi" />
+<spring:url value="/resources/js/jquery.min.js" var="JQuery.min.js" /> 
+<spring:url value="/resources/js/jquery-ui.min.js" var="JQuery-ui.min.js" />
+<spring:url value="/resources/js/css3-mediaqueries.js" var="mediaqueries.js" />
+<spring:url value="/resources/js/fwslider.js" var="fwslider.js" />
+<spring:url value="/resources/js/JFCore.js" var="JFCore.js" />
+<spring:url value="/resources/js/JFForms.js" var="JFForm.js" />
+<spring:url value="/resources/js/jquery-ui.js" var="jQuery-ui.js" />
+<spring:url value="/resources/js/js-image-slider.js" var="imageSliderJS" />
+
+<!-- end spring:url -->
+
+<link href="${sliderCSS}" rel="stylesheet" media="all" />
+<link href="${styleCSS}" rel="stylesheet" type="text/css" media="all" />
+<link href="${jqueryCSS}" rel="stylesheet" />
+<link href="${JFGridCSS}" rel="stylesheet" type="text/css" />
+<link href="${JFFormCSS}" rel="stylesheet" type="text/css" />
+<link href="${imageSliderCSS}" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script src="js/jquery.min.js"></script>
-<!--start slider -->
-<link rel="stylesheet" href="css/fwslider.css" media="all">
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<script src="js/fwslider.js"></script>
- <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="js/js-image-slider.js" type="text/javascript"></script>
-<!--end slider -->
+
+<script src="${JQuery.min.js}"></script>
+<script src="${JQuery-ui.min.js}"></script>
+<script src="${mediaqueries.js}"></script>
+<script src="${fwslider.js}"></script>
+<script src="${JFcore.js}"></script>
+<script src="${JFForm.js}"></script>
+<script src="${googleApi}"></script>
+<script src="${jQuery-ui.js}"></script>
+<script src="${imageSliderJS}"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
 <!---strat-date-piker---->
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<script src="js/jquery-ui.js"></script>
+
 		  <script>
 				  $(function() {
 				    $( "#datepicker,#datepicker1" ).datepicker();
 				  });
 		  </script>
 <!---/End-date-piker---->
-<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
-<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
-		<script type="text/javascript" src="js/JFCore.js"></script>
-		<script type="text/javascript" src="js/JFForms.js"></script>
+		
 		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
 			(function() {
@@ -59,13 +87,14 @@
 		});
 </script>
 </head>
+
 <body>
 <!-- start header -->
 <div class="header_bg">
 <div class="wrap">
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""></a>
+			<a href="index.html"><img src="resources/images/logo.png" alt=""></a>
 		</div>
 		<div class="h_right">
 			<!--start menu -->
@@ -125,7 +154,7 @@
 		<div class="grid1_of_3">
 			<div class="grid1_of_3_img">
 				<a href="details.html">
-					<img src="images/pic2.jpg" alt="" />
+					<img src="resources/images/pic2.jpg" alt="" />
 					<span class="next"> </span>
 				</a>
 			</div>
@@ -145,7 +174,7 @@
 		<div class="grid1_of_3">
 			<div class="grid1_of_3_img">
 				<a href="details.html">
-					<img src="images/pic1.jpg" alt="" />
+					<img src="resources/images/pic1.jpg" alt="" />
 					<span class="next"> </span>
 				</a>
 			</div>
@@ -162,7 +191,7 @@
 		<div class="grid1_of_3">
 			<div class="grid1_of_3_img">
 				<a href="details.html">
-					<img src="images/pic3.jpg" alt="" />
+					<img src="resources/images/pic3.jpg" alt="" />
 					<span class="next"> </span>
 				</a>
 			</div>
