@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"  %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"  %> 
 
 <!DOCTYPE html>
-<%-- <html>
+<html>
 <head>
 
 <!-- add spring:url -->
@@ -15,7 +15,7 @@
 <title>Image testing</title>
 
 
- --%>
+
 <html>
 <head> 
 <title>The Paradise-Hotel</title>
@@ -142,7 +142,8 @@
 		        <div class="slider_container">
 		            <div class="slide"> 
 		                <!-- Slide image -->
-		                    <img src="resources/paradise1.jpg" alt=""/>
+		                ${image}
+		                <img src='resources/paradise1.jpg' alt=''/>
                                    
 		                <!-- /Slide image -->
 		                <!-- Texts container -->
@@ -160,7 +161,8 @@
 		            </div>
 		            <!-- /Duplicate to create more slides -->
 		            <div class="slide">
-		                <img src="resources/hotel1.jpg" alt=""/>
+		            <%-- ${image} --%>		            
+		                <img src="<c:url value='resources/hotel1.jpg' alt='hotel image 1'/>"/>
                               
 		                <div class="slide_content">
                                     
@@ -298,8 +300,10 @@
 			</div>
 			
 			<div class="clear"></div>
-                        
+             <img src='resources/paradise1.jpg' alt=''/>
+                
 </div>
 </div>
 </div>		
 </html>
+ 

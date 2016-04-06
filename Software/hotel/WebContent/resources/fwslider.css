@@ -25,7 +25,7 @@
     z-index: 10;
 }
 #fwslider .slidePrev span {
-	background-image: url("../images/sliderarrows.png");
+	background-image: url("WebContent/resources/sliderarrows.png");
 	width: 60px;
 	height: 60px;
 	float: left;
@@ -40,7 +40,7 @@
     z-index: 10;
 }
 #fwslider .slideNext span {
- 	 background-image: url("../images/sliderarrows.png");
+ 	 background-image: url("WebContent/resources/sliderarrows.png");
 	width: 60px;
 	height: 60px;
 	float: left;
@@ -108,7 +108,7 @@ h4{
 }
 
 h4 i.bg{
-	background: url('../images/stripe.png') 0px 0px;
+	background: url('WebContent/resources/stripe.png') 0px 0px;
 	width: 40px;
 	height: 80px;
 	position: absolute;
@@ -131,7 +131,7 @@ h4 i.bg{
 	background: #308BC4;
 }
 h5 i.bg{
-	background: url('../images/stripe1.png') 0px 0px;
+	background: url("WebContent/resources/stripe1.png") 0px 0px;
 	width: 34px;
 	height: 58px;
 	position: absolute;
@@ -140,7 +140,7 @@ h5 i.bg{
 }
 #fwslider .description { /* Slider Description Style */
     opacity: 0;
-    color:#ffffff;
+    color:#ffffff;s
     font-size: 1.5em;
     padding:0px 0 1em;
     clear:both;
