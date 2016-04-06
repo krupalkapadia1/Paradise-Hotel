@@ -145,7 +145,7 @@ body {
 	background-color: #202227;
 }
 .clearfix a#pull:after {
-	background:url('../images/nav-icon.png')no-repeat;
+	background:url('resources/images/nav-icon.png')no-repeat;
 	width: 30px;
 	content:"";
 	width: 30px;
@@ -260,7 +260,7 @@ select option{
 	-webkit-appearance: none;
 }
 .date{
-	background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+	background:url('resources/images/cal-icon.png') no-repeat 100% 50% #FFF;
 }
 .date_btn{
 	margin-top: 33px;
@@ -426,7 +426,7 @@ select option{
 }
 .soc_icons ul li a{
 	display: block;
-	background: url('../images/soc_icons.png') no-repeat 0px 0px;
+	background: url('resources/images/soc_icons.png') no-repeat 0px 0px;
 	width: 46px;
 	height: 46px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -739,7 +739,7 @@ p.para{
 }
 .s_nav1 li a{
 	display: block;
-	background: url('../images/s_icons.png') no-repeat 0px 0px;
+	background: url('resources/images/s_icons.png') no-repeat 0px 0px;
 	width: 32px;
 	height: 32px;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -912,7 +912,7 @@ span.next{
 	-o-transition-duration: 1s;
 	-moz-transition-duration: 1s;
 	-webkit-transition: -webkit-transform 1s;
-	background: url(../images/next.png) center no-repeat;
+	background: url(resources/images/next.png) center no-repeat;
 	height: 100%;
 	width: 100%;
 	position: absolute;

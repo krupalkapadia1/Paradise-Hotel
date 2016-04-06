@@ -6,8 +6,8 @@
 <head>
 
 <!-- add spring:url -->
-<spring:url value="/resources/fwslider.css" var="sliderCSS" />
-<spring:url value="/resources/fwslider.js" var="sliderJS" />
+<spring:url value="/resources/css/fwslider.css" var="sliderCSS" />
+<spring:url value="/resources/js/fwslider.js" var="sliderJS" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <link href="${sliderCSS}" rel="stylesheet" />
@@ -24,21 +24,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- add spring:url -->
-<spring:url value="/resources/style.css" var="styleCSS" />
-<spring:url value="/resources/fwslider.css" var="sliderCSS" />
-<spring:url value="/resources/jquery-ui.css" var="jqueryCSS" />
-<spring:url value="/resources/JFGrid.css" var="JFGridCSS" />
-<spring:url value="/resources/JFFormStyle-1.css" var="JFFormCSS" />
-<<<<<<< HEAD
-=======
+<spring:url value="/resources/css/style.css" var="styleCSS" />
+<spring:url value="/resources/css/fwslider.css" var="sliderCSS" />
+<spring:url value="/resources/css/jquery-ui.css" var="jqueryCSS" />
+<spring:url value="/resources/css/JFGrid.css" var="JFGridCSS" />
+<spring:url value="/resources/css/JFFormStyle-1.css" var="JFFormCSS" />
+<HEAD>
 
-<spring:url value="/resources/jquery.min.js" var="JQuery.min.js" /> 
-<spring:url value="/resources/jquery-ui.min.js" var="JQuery-ui.min.js" />
-<spring:url value="/resources/css3-mediaqueries.js" var="mediaqueries.js" />
-<spring:url value="/resources/fwslider.js" var="fwslider.js" />
-<spring:url value="/resources/JFCore.js" var="JFCore.js" />
-<spring:url value="/resources/JFForms.js" var="JFForm.js" />
->>>>>>> b395c852a93a29cd03ad897624c8ba2eebce4bfb
+
+<spring:url value="/resources/js/jquery.min.js" var="JQuery.min.js" /> 
+<spring:url value="/resources/js/jquery-ui.min.js" var="JQuery-ui.min.js" />
+<spring:url value="/resources/js/css3-mediaqueries.js" var="mediaqueries.js" />
+<spring:url value="/resources/js/fwslider.js" var="fwslider.js" />
+<spring:url value="/resources/js/JFCore.js" var="JFCore.js" />
+<spring:url value="/resources/js/JFForms.js" var="JFForm.js" />
+
 <!-- end spring:url -->
 
 <link href="${sliderCSS}" rel="stylesheet" media="all" />
@@ -56,14 +56,13 @@
 <script src="${JFForm.js}"></script>
 
 <!--end slider -->
-<<<<<<< HEAD
+
 <!---start-date-piker---->
-<link rel="stylesheet" href="/resources/jquery-ui.css" />
-<script src="/resources/jquery-ui.js"></script>
-=======
+<link rel="stylesheet" href="/resources/js/jquery-ui.css" />
+<script src="/resources/js/jquery-ui.js"></script>
 
 <!---strat-date-piker---->
->>>>>>> b395c852a93a29cd03ad897624c8ba2eebce4bfb
+
 		  <script>
 				  $(function() {
 				    $( "#datepicker,#datepicker1" ).datepicker();
@@ -109,7 +108,7 @@
 <div class="wrap">
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><img src="resources/logo.png" alt=""></a>
+			<a href="index.html"><img src="resources/images/logo.png" alt=""></a>
 		</div>
 		<div class="h_right">
 			<!--start menu -->
@@ -144,87 +143,19 @@
 	</div>
 </div>
 </div>
-<!----start-images-slider---->
-		<div class="images-slider">
-			<!-- start slider -->
-		    <div id="fwslider">
-		        <div class="slider_container">
-		            <div class="slide"> 
-		                <!-- Slide image -->
-		                    <img src="resources/paradise1.jpg" alt=""/>
-                                   
-		                <!-- /Slide image -->
-		                <!-- Texts container -->
-		                <div class="slide_content">
-                                   
-		                    <div class="slide_content_wrap">
-		                        <!-- Text title -->
-                                        
-		                        <h4 class="title"><i class="bg"></i>Welcome to <span class="hide">The Paradise Hotel</span></h4>
-		                        <h5 class="title1"><i class="bg"></i>An authentic place <span class="hide" >for your stay</span></h5>
-		                        <!-- /Text title -->
-		                    </div>
-		                </div>
-		                 <!-- /Texts container -->
-		            </div>
-		            <!-- /Duplicate to create more slides -->
-		            <div class="slide">
-		                <img src="resources/hotel1.jpg" alt=""/>
-                              
-		                <div class="slide_content">
-                                    
-		                     <div class="slide_content_wrap">
-		                        <!-- Text title -->
-                                        
-		                        <h4 class="title"><i class="bg"></i>In every season <span class="hide">a relaxing stay </span> promised</h4>
-		                        <h5 class="title1"><i class="bg"></i>A natural environment<span class="hide">  to live in</span> </h5>
-		                        <!-- /Text title -->
-		                    </div>
-		                </div>
-		            </div>
-		            <!--/slide -->
-                             
-                             <div class="slide">
-		                <img src="resources/hotel6.jpg" alt=""/>
-                              
-		                <div class="slide_content">
-                                    
-		                     <div class="slide_content_wrap">
-		                        <!-- Text title -->
-                                        
-		                        <h4 class="title"><i class="bg"></i>In every season <span class="hide">a relaxing stay </span> promised</h4>
-		                        <h5 class="title1"><i class="bg"></i>A natural environment<span class="hide">  to live in</span> </h5>
-		                        <!-- /Text title -->
-		                    </div>
-		                </div>
-		            </div>
-		            <!--/slide -->
-                             <div class="slide">
-		                <img src="resources/hotel8.jpg" alt=""/>
-                              
-		                <div class="slide_content">
-                                    
-		                     <div class="slide_content_wrap">
-		                        <!-- Text title -->
-                                        
-                                        
-		                        <h4 class="title"><i class="bg"></i>In every season <span class="hide">a relaxing stay </span> promised</h4>
-		                        <h5 class="title1"><i class="bg"></i>A natural environment<span class="hide">  to live in</span> </h5>
-		                        <!-- /Text title -->
-		                    </div>
-		                </div>
-		            </div>
-		            <!--/slide -->
-		        </div>
-		        <div class="timers"> </div>
-		        <div class="slidePrev"><span> </span></div>
-		        <div class="slideNext"><span> </span></div>
-		    </div>
-		    <!--/slider -->
-		</div>
+
+<div id="fwslider">
+  
+   <img src="resources/images/paradise1.png" alt=""/>
+  
+    
+   </div>
+
+
+
+
 <!--start main -->
-<div class="main_bg">
-<div class="wrap">
+
 	<div class="online_reservation">
 	<div class="b_room">
 		<div class="booking_room">
@@ -249,7 +180,9 @@
 					<h5>check-in-date:</h5>
 					<div class="book_date">
 						<form>
-							<input class="date" id="datepicker" type="text" value="DD/MM/YY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
+							<input class="date" id="datepicker" 
+							type="text" value="DD/MM/YY"
+							 onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
 						</form>
 
 					</div>					
@@ -258,7 +191,9 @@
 					<h5>check-out-date:</h5>
 					<div class="book_date">
 						<form>
-							<input class="date" id="datepicker1" type="text" value="DD/MM/YY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
+							<input class="date" id="datepicker1" 
+							type="text" value="DD/MM/YY" 
+							onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
 						</form>
 					</div>		
 				</li>
@@ -288,7 +223,7 @@
 		</div>
 	</div>
 	
-<!--start main -->
+<!--start footer -->
 <div class="footer_bg">
 <div class="wrap">
 <div class="footer">
@@ -306,7 +241,7 @@
 				</ul>
 			</div>
 			
-			<div class="clear"></div>
+		
                         
 </div>
 </div>
